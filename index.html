@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Divyansh Raina — Software Engineer</title>
+  <meta name="description" content="Software Engineer working on systems, back-end and cloud-native platforms: C/C++, Python, Linux, Docker and Kubernetes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="nav">
+    <a class="logo" href="#top">dr<span>.</span></a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="theme" class="icon-btn" aria-label="Toggle light / dark theme">◐</button>
+  </header>
+
+  <main id="top">
+    <section class="hero wrap">
+      <p class="mono eyebrow">Hi, I'm</p>
+      <h1>Divyansh Raina</h1>
+      <p class="tagline">Software Engineer building <em>cloud-native</em> &amp; <em>containerized</em> systems.</p>
+      <p class="lead">Nearly 3 years debugging and shipping distributed systems for 4G/5G telecom, using C/C++, Python, Linux, Docker and Kubernetes. Currently at Nokia, Bengaluru.</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my work</a>
+      </div>
+      <ul class="stats">
+        <li><b>~3 yrs</b><span>telecom &amp; cloud</span></li>
+        <li><b>98–99%</b><span>HA 4G/5G workloads</span></li>
+        <li><b>20%</b><span>fewer noise checks</span></li>
+        <li><b>8.81</b><span>CGPA, PES University</span></li>
+      </ul>
+    </section>
+
+    <section id="about" class="wrap">
+      <h2><span class="mono">01</span> About</h2>
+      <div class="two-col">
+        <div>
+          <p>I work close to the metal of distributed systems: transport-layer protocol components, microservices for LTE and 5G Cloud RAN, and the Linux platforms underneath them. I like tracking a failure from a symptom in the logs down to the root cause, then building the tooling so the next person finds it faster.</p>
+          <p>Outside work I build side projects in Python, TypeScript and Go — from computer-vision research to desktop tools and web apps.</p>
+        </div>
+        <ul class="facts mono">
+          <li><span>Location</span>Bengaluru, India</li>
+          <li><span>Education</span>B.Tech CSE, PES University (2023)</li>
+          <li><span>Languages</span>English, Hindi, Kashmiri, Kannada</li>
+          <li><span>Looking for</span>Systems · Back-end · Cloud-native roles</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="wrap">
+      <h2><span class="mono">02</span> Experience</h2>
+      <ol class="timeline">
+        <li>
+          <div class="when mono">Apr 2025 – Present</div>
+          <h3>Software Engineer <small>Nokia Solutions and Networks, Bengaluru</small></h3>
+          <ul>
+            <li>Designed a Network Management plugin that parses and correlates logs, configuration and runtime data, speeding up first-level fault analysis.</li>
+            <li>Worked on transport-layer protocol components and microservices supporting LTE and 5G Cloud RAN deployments.</li>
+            <li>Resolved persistent network issues across multiple proprietary hardware boards, improving deployment stability and cutting recurring field issues.</li>
+            <li>Built internal tooling for bug analysis that reduced noise checks by 20%. Employee of the Month, TRS Stack &amp; Apps team.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when mono">Jun 2023 – Apr 2025</div>
+          <h3>Member of Technical Staff <small>Altiostar Networks, Rakuten Symphony India</small></h3>
+          <ul>
+            <li>Managed CentOS 7.9 and Rocky Linux 8.6/8.10 environments; designed custom ISOs for large-scale deployments.</li>
+            <li>Debugged and tuned systems with GDB, Valgrind, Wireshark and Lumberjack.</li>
+            <li>Shipped Docker and Kubernetes solutions on Robin Cloud Native Platform.</li>
+            <li>Streamlined field upgrades with systemd: 10–15 min less downtime, 100 MB less memory; improved fronthaul redundancy (5 min less radio-cell downtime) and cut server costs by 20%.</li>
+          </ul>
+        </li>
+        <li>
+          <div class="when mono">Jan 2023 – Jun 2023</div>
+          <h3>Software Engineer Intern <small>Intel Technologies, Bengaluru</small></h3>
+          <ul>
+            <li>Built scalable VMaaS / BMaaS cloud services in Go.</li>
+            <li>Deployed Docker images and integrated Make/Bazel into CI/CD with Enterprise GitHub to automate testing and deployment.</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" class="wrap">
+      <h2><span class="mono">03</span> Projects</h2>
+      <p class="muted">Pulled from my <a href="https://github.com/QuantumBoy-729">GitHub</a>.</p>
+      <div class="cards">
+        <article class="card featured">
+          <span class="tag">Featured</span>
+          <h3>CloudNetSleuth</h3>
+          <p>Cloud-native network observability and root-cause-analysis platform. Containerized Python microservices ingest and parse logs from Kubernetes workloads, a rules-based engine flags recurring failures (timeouts, service disruptions), and Prometheus + Grafana visualize error trends and service health.</p>
+          <ul class="chips mono"><li>Kubernetes</li><li>Python</li><li>Docker</li><li>Prometheus</li><li>Grafana</li></ul>
+          <a href="https://github.com/QuantumBoy-729/CloudNetSleuth">View on GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>Gait Recognition System</h3>
+          <p>PES University capstone: identify people by how they walk, even when faces are hidden. Gait Energy Images, optical flow and Siamese networks, with PCA/LDA for feature reduction.</p>
+          <ul class="chips mono"><li>Python</li><li>OpenCV</li><li>TensorFlow</li><li>Siamese NN</li></ul>
+          <a href="https://github.com/QuantumBoy-729/Gait_Analysis">View on GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>Video Downloader</h3>
+          <p>Desktop video downloader with pause / resume / stop, live progress, multiple formats and quality options. Packaged as a single-file executable and MSI installer.</p>
+          <ul class="chips mono"><li>Python</li><li>Tkinter</li><li>yt-dlp</li><li>WiX</li></ul>
+          <a href="https://github.com/QuantumBoy-729/YT-videoDownloader">View on GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>Mahabharata Recital</h3>
+          <p>A quiet web reader that reads the Mahabharata aloud sentence by sentence using the browser's speech synthesis. All 18 parvas, sentence highlighting, voice controls, no backend.</p>
+          <ul class="chips mono"><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind</li></ul>
+          <a href="https://github.com/QuantumBoy-729/mahabharata-recital">View on GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>Wireshark Diagnostics</h3>
+          <p>Collaborative project collecting tooling and analysis around Wireshark packet diagnostics.</p>
+          <ul class="chips mono"><li>Python</li><li>Wireshark</li><li>HTML</li></ul>
+          <a href="https://github.com/QuantumBoy-729/Wireshark-Diagnostics">View on GitHub →</a>
+        </article>
+        <article class="card">
+          <h3>Mini Projects</h3>
+          <p>A collection of smaller Python experiments, including a Notepad clone, algorithm practice and coursework in big data and cloud computing.</p>
+          <ul class="chips mono"><li>Python</li><li>Spark</li><li>Flask</li></ul>
+          <a href="https://github.com/QuantumBoy-729/Mini_Projects">View on GitHub →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="wrap">
+      <h2><span class="mono">04</span> Skills</h2>
+      <div class="skills">
+        <div><h3>Languages</h3><ul class="chips mono"><li>C / C++</li><li>Python</li><li>Go</li><li>TypeScript</li><li>Shell</li></ul></div>
+        <div><h3>Platforms &amp; Cloud</h3><ul class="chips mono"><li>Docker</li><li>Kubernetes</li><li>Linux (CentOS, Rocky)</li><li>systemd</li><li>Prometheus</li><li>Grafana</li></ul></div>
+        <div><h3>Debugging &amp; Tools</h3><ul class="chips mono"><li>GDB</li><li>Valgrind</li><li>Wireshark</li><li>Bazel / Make</li><li>CI/CD</li></ul></div>
+        <div><h3>Practices</h3><ul class="chips mono"><li>Distributed systems</li><li>Microservices</li><li>Performance tuning</li><li>Automation scripting</li><li>API development</li><li>Agile / Scrum</li></ul></div>
+      </div>
+      <h3 class="sub">Certifications</h3>
+      <ul class="plain"><li>Linux for Developers — Coursera</li><li>Linux Tools for Developers — Coursera</li></ul>
+    </section>
+
+    <section id="contact" class="wrap">
+      <h2><span class="mono">05</span> Contact</h2>
+      <p class="lead">Open to systems, back-end and cloud-native engineering roles. The best way to reach me is email.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:divyanshraina729@gmail.com">divyanshraina729@gmail.com</a>
+        <a class="btn" href="https://github.com/QuantumBoy-729">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/divyansh-raina">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap mono"><span>© <span id="year"></span> Divyansh Raina</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
